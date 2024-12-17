@@ -14,13 +14,16 @@ function App() {
   //   setCount(count + 1 );
   // }
 
-
+  function Descrement(){
+    setCount (prevCount => prevCount - 1);
+  }
 
 
   return (
     <div className="App">
         <h1>{count}</h1>
-        <button onClick={Increment}>Plus 1</button>      
+        <button onClick={Increment}>Plus 1</button>
+        <button onClick={Descrement}>Minus 1</button>      
     </div>
   );
 }
